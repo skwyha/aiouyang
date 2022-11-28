@@ -1,7 +1,7 @@
 package one.aiouyang.community.dto;
 
 /**
- * @Description:
+ * @Description: GitHub API 需要填写的一些信息
  * @Author: Andy
  * @version: 1.0
  * @Date: 2022/11/23 15:37

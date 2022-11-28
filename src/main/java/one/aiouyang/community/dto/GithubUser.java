@@ -1,7 +1,7 @@
 package one.aiouyang.community.dto;
 
 /**
- * @Description:
+ * @Description: 获取到的GitHub用户信息
  * @Author: Andy
  * @version: 1.0
  * @Date: 2022/11/23 16:23
@@ -33,5 +33,14 @@ public class GithubUser {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    @Override
+    public String toString() {
+        return "GithubUser{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", bio='" + bio + '\'' +
+                '}';
     }
 }

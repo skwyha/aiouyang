@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import java.io.IOException;
 
 /**
- * @Description:
+ * @Description: 获取github的token和user信息
  * @Author: Andy
  * @version: 1.0
  * @Date: 2022/11/23 15:36
@@ -39,7 +39,7 @@ public class GithubProvider {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
         .url("https://api.github.com/user")
-                .header("Authorization", "token" + accessToken)
+                .header("Authorization","token " + accessToken)
                 .build();
         try {
             Response response = client.newCall(request).execute();
